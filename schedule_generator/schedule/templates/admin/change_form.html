@@ -1,0 +1,24 @@
+{% extends "admin/change_form.html" %}
+
+{% block content %}
+{{ block.super }}
+<script type="text/javascript">
+    window.onload = () => {
+        const activitiesSelector = document.getElementById('id_activities_from');
+        const manageActivies = (activity) => {
+            const allOptions = Array.from(activitiesSelector.options);
+            console.log(activity,allOptions);
+            const activities = allOptions.filter(option => option.text.includes(activity));
+            allOptions.forEach(option => {
+                option.disabled = activities.includes(option) ? false : true;
+                option.style.backgroundColor = activities.includes(option) ? 'white' : 'lightgray';
+            });
+        };
+        const ministry = document.getElementById('id_ministry');
+        manageActivies(ministry.options[ministry.selectedIndex].text);
+        ministry.addEventListener('change', (e) => {
+            manageActivies(e.target.options[e.target.selectedIndex].text);
+        });
+    };
+</script>
+{% endblock %}

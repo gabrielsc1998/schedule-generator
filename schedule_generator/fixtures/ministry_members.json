@@ -1,0 +1,18 @@
+[
+    {
+        "model": "ministry.member",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "activities": [1]
+        }
+    },
+    {
+        "model": "ministry.member",
+        "pk": 2,
+        "fields": {
+            "user": 3,
+            "activities": [4]
+        }
+    }
+]

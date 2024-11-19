@@ -1,0 +1,50 @@
+[
+    {
+        "model": "ministry.ministryactivity",
+        "pk": 1,
+        "fields": {
+            "ministry": 1,
+            "activity": "Violão"
+        }
+    },
+    {
+        "model": "ministry.ministryactivity",
+        "pk": 2,
+        "fields": {
+            "ministry": 1,
+            "activity": "Bateria"
+        }
+    },
+    {
+        "model": "ministry.ministryactivity",  
+        "pk": 3,
+        "fields": {
+            "ministry": 1,
+            "activity": "Backing Vocal"
+        }
+    },
+    {
+        "model": "ministry.ministryactivity",
+        "pk": 4,
+        "fields": {
+            "ministry": 1,
+            "activity": "Guitarra"
+        }
+    },
+    {
+        "model": "ministry.ministryactivity",
+        "pk": 5,
+        "fields": {
+            "ministry": 1,
+            "activity": "Teclado"
+        }
+    },
+    {
+        "model": "ministry.ministryactivity",
+        "pk": 6,
+        "fields": {
+            "ministry": 1,
+            "activity": "Baixo"
+        }
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "model": "ministry.ministry",
+        "pk": 1,
+        "fields": {
+            "type": 1,
+            "members": [1, 2]
+        }
+    }
+]
+  
